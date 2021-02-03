@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Chat App UI</title>
+</head>
+<body>
+  <div class="chat">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-back">
+        <ion-icon name="chevron-back-outline" class="header-img"></ion-icon>
+        <p>Back</p>
+      </div>
+      <div class="header-user">
+        <h3>Brad Smith</h3>
+        <p>online</p>
+      </div>
+      <div class="header-call">
+        <ion-icon name="call-outline" class="header-call-img"></ion-icon>
+        <ion-icon name="videocam-outline" class="header-call-img"></ion-icon>
+      </div>
+    </div>
+
+    <!-- Conversation -->
+    <div class="conversations">
+      <div class="conversation conversation-left">
+        <img src="img/avatar1.jpg" class="conversation-img">
+        <p class="conversation-msg">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="conversation conversation-right">
+        <p class="conversation-msg">Lorem ipsum dolor sit amet.</p>
+        <img src="img/avatar2.jpg" class="conversation-img">
+      </div>
+      <div class="conversation conversation-left">
+        <img src="img/avatar1.jpg" class="conversation-img">
+        <p class="conversation-msg">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="conversation conversation-right">
+        <p class="conversation-msg">Lorem ipsum dolor sit amet.</p>
+        <img src="img/avatar2.jpg" class="conversation-img">
+      </div>
+      <div class="conversation conversation-left">
+        <img src="img/avatar1.jpg" class="conversation-img">
+        <p class="conversation-msg">Au clavier...</p>
+      </div>
+    </div>
+
+    <!-- Send Message -->
+    <form class="form">
+      <div class="form-input">
+        <div class="form-logo">
+          <ion-icon name="attach-outline"></ion-icon>
+        </div>
+
+        <div class="form-group">
+          <textarea placeholder="Enter your message here" minlength="1" maxlength="1500"></textarea>
+          <ion-icon name="happy-outline" class="form-smile"></ion-icon>
+        </div>
+
+        <button class="form-submit">
+          <img src="./img/send.svg" class="form-img" alt="send">
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- IonIcons -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  <!-- App JS -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
